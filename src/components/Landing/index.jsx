@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Spline scene="https://prod.spline.1design/iFhGVgpUtCh28Gum/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/iFhGVgpUtCh28Gum/scene.splinecode" />
       <div ref={gallery} className={styles.gallery}>
         {/* Placeholder for Column components */}
       </div>
