@@ -1,0 +1,28 @@
+/* Resetting default margin for body */
+body {
+  margin: 0;
+}
+
+/* Setting height to 100% for both html and body */
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Hiding overflow to prevent scrolling */
+}
+
+/* Ensuring canvas elements are displayed as blocks */
+canvas {
+  display: block;
+}
+
+/* Resetting default margin for body again (this is a duplicate) */
+body {
+  margin: 0;
+}
+
+/* Ensuring that html, body, and #root take up the full height */
+html,
+body,
+#root {
+  height: 100%;
+}

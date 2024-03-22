@@ -1,0 +1,115 @@
+.gallery {
+    height: 205vh; /* Sets the height of the gallery */
+    background: rgb(45, 45, 45); /* Background color */
+    position: relative;
+    display: flex;
+    gap: 2vw; /* Gap between items */
+    padding: 2vw; /* Padding around the gallery */
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  /* Styles for each column in the gallery */
+  .gallery .column {
+    position: relative;
+    height: 100%;
+    width: 25%; /* Each column takes up 25% of the gallery width */
+    min-width: 250px; /* Minimum width of each column */
+    display: flex;
+    flex-direction: column;
+    gap: 2vw; /* Gap between items in the column */
+  }
+  
+  /* Styles for the image container within each column */
+  .gallery .column .imageContainer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 1vw; /* Border radius for rounded corners */
+    overflow: hidden;
+  }
+  
+  /* Styles for images within the image container */
+  .gallery .column .imageContainer img {
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+  
+  /* Offset positioning for different columns */
+  .gallery .column:nth-of-type(1) {
+    top: -45%;
+  }
+  .gallery .column:nth-of-type(2) {
+    top: -95%;
+  }
+  .gallery .column:nth-of-type(3) {
+    top: -45%;
+  }
+  .gallery .column:nth-of-type(4) {
+    top: -75%;
+  }
+  
+  /* Spacer */
+  .spacer {
+    height: 100vh; /* Spacer height */
+  }
+  
+  /* Styles for a double layout */
+  .double {
+    display: flex;
+    margin-top: 10vh; /* Margin at the top */
+    height: 45vw; /* Height of the double layout */
+  
+    /* Styles for image containers within the double layout */
+    .imageContainer:nth-of-type(1) {
+      width: 66.66%; /* First image container takes up 66.66% of width */
+    }
+    .imageContainer:nth-of-type(2) {
+      width: 33.33%; /* Second image container takes up 33.33% of width */
+    }
+  
+    /* Styles for the stretchy wrapper */
+    .imageContainer .stretchyWrapper {
+      padding-bottom: 66%; /* Aspect ratio for the stretchy wrapper */
+      position: relative;
+    }
+  
+    /* Styles for images within the double layout */
+    .imageContainer img {
+      object-fit: cover; /* Ensures the image covers the entire container */
+    }
+  }
+  
+  /* Styles for even double layouts */
+  .double:nth-child(even) .imageContainer {
+    .imageContainer:nth-of-type(1) {
+      width: 33.33%; /* First image container takes up 33.33% of width */
+    }
+    .imageContainer:nth-of-type(2) {
+      width: 66.66%; /* Second image container takes up 66.66% of width */
+    }
+  }
+  
+  /* Styles for text content within the double layout */
+  .double .body {
+    font-size: 16px; /* Font size for text */
+    padding: 10px; /* Padding around text content */
+  
+    /* Styles for headings */
+    h3 {
+      font-size: 1.2em; /* Font size for heading */
+      margin-bottom: 5px; /* Bottom margin for heading */
+      margin-top: 0px; /* Top margin for heading */
+      font-weight: 400; /* Font weight for heading */
+    }
+  
+    /* Styles for paragraphs */
+    p {
+      font-size: 1em; /* Font size for paragraphs */
+      margin: 0px; /* Margin for paragraphs */
+      color: rgb(187, 187, 187); /* Text color */
+    }
+    p:nth-of-type(2) {
+      color: rgb(101, 101, 101); /* Color for second paragraph */
+    }
+  }
+  

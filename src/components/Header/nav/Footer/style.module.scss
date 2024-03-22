@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 40px;
+    color: rgb(255, 248, 248); // Default text color for the entire footer
+    
+    a {
+      color: inherit; // Set anchor text color to inherit from the parent (.footer)
+      text-decoration: none; // Remove default underline styling
+    }
+  }
+  
